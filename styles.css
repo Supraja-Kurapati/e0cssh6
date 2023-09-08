@@ -1,0 +1,261 @@
+/*index-1*/
+.parent{
+    display: flex;
+    justify-content: center;
+}
+.num{
+    padding-top: 100px;
+}
+.rbox{
+    height: 100px;
+    width: 100px;
+    border: 1px solid grey;
+    margin: 20px;
+
+}
+.row1{
+    background-color: lightslategrey;
+    animation: anim1 2.5s infinite alternate;
+}
+@keyframes anim1{
+    0%{
+        transform: skewX(30deg);
+    }
+    100%{
+        transform: skewX(-30deg);
+    }
+}
+
+.row2{
+    background-color: dimgray;
+    animation: anim2 2.5s infinite alternate;
+}
+@keyframes anim2{
+    0%{
+        transform: skewy(30deg);
+    }
+    100%{
+        transform: skewy(-30deg);
+    }
+}
+
+.row3{
+  background-color: aquamarine;
+    animation: anim3 3s infinite;
+}
+@keyframes anim3{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.row4-1{
+background-color: aqua;
+animation: anim41 2.5s infinite alternate;
+}
+@keyframes anim41{
+    0%{
+        transform: scaleY(0.5);
+    }
+    100%{
+        transform: scaleY(1);
+    }
+}
+
+.row4-2{
+    background-color: brown;
+    animation: anim42 2.5s infinite alternate;
+}
+@keyframes anim42{
+    0%{
+        transform: scaleX(1);
+    }
+    100%{
+        transform: scaleX(0.5);  
+    }
+}
+
+.row4-3{
+    background-color: green;
+    animation: anim43 2.8s infinite alternate;
+}
+@keyframes anim43{
+    0%{
+        transform: rotate(60deg);
+    }
+    100%{
+        transform: rotate(-60deg);
+  
+    }
+}
+
+/*Index-2*/
+.box{
+    display: flex;
+    justify-content: center;
+}
+.bx {
+height: 100px;
+width: 100px;
+margin: 10px;
+background-color: lightgreen;
+border: 1px solid lightgreen;
+display: flex;
+justify-content: center;
+transition-duration: 2s;
+}
+.bx1:hover {
+width: 300px;
+}
+.bx2:hover {
+height: 300px;
+width: 340px;
+}
+.bx3:hover {
+width: 300px;
+transition-timing-function: linear;
+}
+.bx4:hover {
+width: 300px;
+transition-timing-function: ease;
+}
+.bx5:hover {
+width: 300px;
+transition-timing-function: ease-in;
+}
+.bx6:hover {
+width: 300px;
+transition-timing-function: ease-out;
+}
+.bx7:hover {
+width: 300px;
+transition-timing-function: ease-in-out;
+}
+
+/*Index-3*/
+.sky{
+    border: 15px solid;
+    border-color: white green white orange;
+    background-image: url(./sky.jpg);
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.text{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: serif;
+}
+.happy{
+    background-color: orange;
+    margin: 0px 15px;
+}
+.ind{
+    background-color: white;
+    margin: 0px 15px;
+}
+.day{
+    background-color: green;
+    margin: 0px 15px;
+}
+.road{
+    height: 35%;
+    width: 500%;
+    background-image: url(road.jpg);
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    animation: road 3s infinite linear;
+}
+@keyframes road {
+    100%{
+        transform: translate(-1500px);
+    }  
+}
+.car{
+    height: 30%;
+    width: 38%;
+    background-image: url(car.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 2;
+    position: absolute;
+    bottom: 20%;
+    left: 35%;
+    animation: car 1s infinite linear;
+}
+@keyframes car{
+    0%{
+        transform: translateY(1px);
+    }
+    100%{
+        transform: translateY(5px);
+    }
+}
+.wheel img{
+    height: 88px;
+    width: 88px;
+    animation: wheels 1.5s infinite linear;
+}
+@keyframes wheels{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+#w1{
+    z-index: 3;
+    position: absolute;
+    bottom: 17%;
+    left: 38.4%;
+}
+#w2{
+    z-index: 3;
+    position: absolute;
+    bottom: 17%;
+    left: 61.6%; 
+}
+.city
+{
+    width: 500%;
+    height: 100vh;
+    background-image: url(city.png);
+    z-index: 1;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 25%;
+    animation: city 2s infinite linear;
+}
+@keyframes city{
+    100%{
+        transform: translate(-100px);
+    }  
+}
+.flag{
+    background-image: url(Tiranga1.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    left: 65%;
+    bottom: 36%;
+    z-index: 3;
+}
+.sun{
+    background-image: url(sun.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 130px;
+    width: 130px;
+    position: absolute;
+right: 10%;
+}
+
