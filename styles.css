@@ -137,7 +137,7 @@ transition-timing-function: ease-in-out;
     border: 15px solid;
     border-color: white green white orange;
     background-image: url(./sky.jpg);
-    height: 100vh;
+    height: 95vh;
     width: 95vw;
     background-size: cover;
     background-position: center;
